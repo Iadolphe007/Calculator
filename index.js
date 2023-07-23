@@ -4,9 +4,19 @@ screen_input = document.querySelector('.input')
 screen_out = document.querySelector('.output')
 numBtn = document.querySelector('.value_num')
 signBtn = document.querySelector('.sign')
-equalNtm = document.getElementById('equal-btn')
+equalBtn = document.getElementById('equal-btn')
 dotBtn = document.getElementById('dot-btn')
 
+
+window.addEventListener('keydown', Keyboard_inputnput)
+equalBtn = addEventListener('click', evaluate)
+deleteBtn = addEventListener('click', clear)
+deleteBtn = addEventListener('click', delete_num)
+dotBtn = addEventListener('click', add_point)
+
+function round_result(number) {
+    return Math.round(number * 1000) / 1000
+}
 
 function Keyboard_input(e) {
     if (e.key >= 0 && e.key <= 9){
