@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
     <title>Web_calculator</title>
 </head>
@@ -11,33 +11,36 @@
     <div class="container">
         <div class="adjust">
             <div class="bot-class">
-                <div class="screen"></div>
+                <div class="screen">
+                    <div class="input"></div>
+                    <div class="output"></div>
+                </div>
                 <div class="number">
                     <button id="c-btn" class="span-2">Clear</button>
                     <button id="del-btn" class="span-2">del</button>
                     <div>
-                        <button id="seven-btn">7</button>
-                        <button id="eight-btn">8</button>
-                        <button id="nine-btn">9</button>
-                        <button id="min-btn">-</button>
+                        <button id="seven-btn" class="value_num">7</button>
+                        <button id="eight-btn" class="value_num">8</button>
+                        <button id="nine-btn" class="value_num">9</button>
+                        <button id="min-btn" class="sign">-</button>
                     </div>
                     <div>
-                        <button id="four-btn">4</button>
-                        <button id="five-btn">5</button>
-                        <button id="six-btn">6</button>
-                        <button id="add-btn">+</button>
+                        <button id="four-btn" class="value_num">4</button>
+                        <button id="five-btn" class="value_num">5</button>
+                        <button id="six-btn" class="value_num">6</button>
+                        <button id="add-btn" class="sign">+</button>
                     </div>
                     <div>
-                        <button id="one-btn">1</button>
-                        <button id="two-btn">2</button>
-                        <button id="three-btn">3</button>
-                        <button id="div-btn">X</button>
+                        <button id="one-btn" class="value_num">1</button>
+                        <button id="two-btn" class="value_num">2</button>
+                        <button id="three-btn" class="value_num">3</button>
+                        <button id="mul-btn" class="sign">X</button>
                     </div>
                     <div>
-                        <button id="sign-btn">.</button>
-                        <button id="zero-btn">0</button>
-                        <button id="dot-btn">=</button>
-                        <button id="mul-btn">%</button>
+                        <button id="dot-btn">.</button>
+                        <button id="zero-btn" class="value_num">0</button>
+                        <button id="equal-btn">=</button>
+                        <button id="div-btn" class="sign">/</button>
                     </div>    
                 </div>
             </div>

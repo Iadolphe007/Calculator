@@ -1,0 +1,8 @@
+clearBtn = document.getElementById('c-btn')
+deleteBtn = document.getElementById('del-btn')
+screen_input = document.querySelector('.input')
+screen_out = document.querySelector('.output')
+numBtn = document.querySelector('.value_num')
+signBtn = document.querySelector('.sign')
+equalNtm = document.getElementById('equal-btn')
+dotBtn = document.getElementById('dot-btn')

@@ -38,3 +38,35 @@ button{
     margin-top: 100px;
     margin-left: 600px;
 }
+
+.input{
+    border: 2px solid red;
+    height: 60%;
+    word-wrap: break-word;
+}
+.output{
+    border: 2px solid green;
+    height: 35%;
+    word-wrap: break-word;
+}
+
+#c-btn{
+    background-color: green;
+}
+#del-btn{
+    background-color: red;
+}
+.sign{
+    background-color: orange;
+}
+#equal-btn{
+    background-color: orange;
+}
+#dot-btn{
+    background-color: black;
+    color: white;
+}
+.value_num{
+    background-color: black;
+    color: white;
+}
