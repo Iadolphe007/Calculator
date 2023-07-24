@@ -3,30 +3,29 @@ let screen_del = false
 let first_operator = ''
 let second_operator = ''
 
-clearBtn = document.getElementById('c-btn')
-deleteBtn = document.getElementById('del-btn')
-screen_input = document.querySelector('.input')
-screen_out = document.querySelector('.output')
-numBtn = document.getElementById('data')
-signBtn = document.getElementById('sign')
-equalBtn = document.getElementById('equal-btn')
-dotBtn = document.getElementById('dot-btn')
-
+const clearBtn = document.getElementById('c-btn')
+const deleteBtn = document.getElementById('del-btn')
+const screen_input = document.querySelector('.input')
+const screen_out = document.querySelector('.output')
+const numBtn = document.querySelectorAll('.data')
+const signBtn = document.querySelectorAll('.sign')
+const equalBtn = document.getElementById('equal-btn')
+const dotBtn = document.getElementById('dot-btn')
 
 window.addEventListener('keydown', Keyboard_input)
-equalBtn = addEventListener('click', evaluate)
-clearBtn = addEventListener('click', clear)
-deleteBtn = addEventListener('click', delete_number)
-dotBtn = addEventListener('click', add_point)
-
+equalBtn.addEventListener('click', evaluate);
+clearBtn.addEventListener('click', clear);
+deleteBtn.addEventListener('click', delete_number);
+dotBtn.addEventListener('click', add_point);
 
 numBtn.forEach((button) => 
     button.addEventListener('click', () => add_number(button.textContent))
 )
 
 signBtn.forEach((button) =>
-  button.addEventListener('click', () => add_sign(button.textContent))
+  button.addEventListener('click', () => set_operator(button.textContent))
 )
+
 
 function add_number(number){
     if(screen_input.textContent === '0' || screen_del){
@@ -49,7 +48,7 @@ function clear() {
   }
   function add_point() {
     if (screen_del){
-        delete_creen()
+        delete_screen()
     }
     if (screen_input.textContent === ''){
         screen_input.textContent = '0'
