@@ -27,6 +27,7 @@ body{
     width: 240px;
     padding-right: 8px;
     background-color: transparent;
+    flex: 1;
 
 }
 input{
@@ -47,6 +48,7 @@ button{
 
 #c-btn{
     background-color: green;
+
 }
 
 #del-btn{
@@ -55,16 +57,19 @@ button{
 
 .sign{
     background-color: orange;
+
 }
 .data{
     background-color: black;
     color: white;
+
 }
 
 button{
     border: none;
     border-radius: 9px;
     cursor: pointer;
+
 }
 
 button:active{
