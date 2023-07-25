@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
     <title>Web_calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="adjust">
             <div class="bot-class">
-                <div class="screen">
-                    <div class="input"></div>
-                    <div class="output"></div>
-                </div>
+                <input type="text" class="screen" readonly>
                 <div class="number">
-                    <button id="c-btn" class="span-2">Clear</button>
-                    <button id="del-btn" class="span-2">del</button>
+                    <button id="c-btn" class="span-2" data-value="AC">AC</button>
+                    <button id="del-btn" class="span-2" data-value="Del">Del</button>
+                    <button id="mod-btn" data-value="%" class="sign">%</button>
+                    <button class="sign" data-value="=">=</button>
                     <div>
-                        <button id="data-7" class="data">7</button>
-                        <button id="data-8" class="data">8</button>
-                        <button id="data-9" class="data">9</button>
-                        <button class="sign" id="minus">-</button>
+                        <button  class="data"data-value="7">7</button>
+                        <button class="data" data-value="8">8</button>
+                        <button class="data" data-value="9">9</button>
+                        <button class="sign" data-value="-">-</button>
                     </div>
                     <div>
-                        <button id="data-4" class="data">4</button>
-                        <button id="data-5" class="data">5</button>
-                        <button id="data-6" class="data">6</button>
-                        <button class="sign" id="plus">+</button>
+                        <button class="data" data-value="4">4</button>
+                        <button class="data" data-value="5">5</button>
+                        <button class="data" data-value="6">6</button>
+                        <button class="sign" data-value="+">+</button>
                     </div>
                     <div>
-                        <button id="data-1" class="data">1</button>
-                        <button id="data-2" class="data">2</button>
-                        <button id="data-3" class="data">3</button>
-                        <button class="sign" id="multi">X</button>
+                        <button class="data" data-value="1">1</button>
+                        <button class="data" data-value="2">2</button>
+                        <button class="data" data-value="3">3</button>
+                        <button class="sign" data-value="x">x</button>
                     </div>
                     <div>
-                        <button id="dot-btn">.</button>
-                        <button id="data-0" class="data">0</button>
-                        <button id="equal-btn">=</button>
-                        <button class="sign" id="divide">/</button>
+                        <button class="data" data-value=".">.</button>
+                        <button class="data" data-value="0">0</button>
+                        <button data-value="00" class="data">00</button>
+                        <button class="sign" data-value="/">/</button>
                     </div>    
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

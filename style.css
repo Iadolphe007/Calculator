@@ -19,36 +19,45 @@ body{
 }
 
 .screen{
-    border: solid rgb(63, 62, 62);
-    border-radius: 5px;
-    height: 110px;
-    margin-bottom: 20px;    
-}
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 7px;
+    height: 80px;
+    margin-bottom: 20px;   
+    text-align: right;
+    width: 240px;
+    padding-right: 8px;
+    background-color: transparent;
 
+}
+input{
+    font-size: 20px;
+    font-weight: bold;
+}
 button{
     width: 55px;
     height: 50px;
     margin: 3px;
 }
-.span-2{
+/* .span-2{
     width: 120px;
-}
+} */
 
 .adjust{
     margin-top: 100px;
     margin-left: 600px;
 }
 
-.input{
-    border: 2px solid red;
+/* .input{
     height: 60%;
     word-wrap: break-word;
+    padding-right: 10px;
 }
 .output{
-    border: 2px solid green;
     height: 35%;
     word-wrap: break-word;
-}
+    padding-right: 10px;
+} */
+
 
 #c-btn{
     background-color: green;
@@ -59,14 +68,26 @@ button{
 .sign{
     background-color: orange;
 }
-#equal-btn{
+/* #equal-btn{
     background-color: orange;
-}
-#dot-btn{
+} */
+/* #mod-btn{
+    background-color: orange;
+} */
+/* #dot-btn{
     background-color: black;
     color: white;
-}
+} */
 .data{
     background-color: black;
     color: white;
+}
+
+button{
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.99);
 }

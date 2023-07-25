@@ -5,8 +5,8 @@ let second_operator = ''
 
 const clearBtn = document.getElementById('c-btn')
 const deleteBtn = document.getElementById('del-btn')
-const screen_input = document.querySelector('.input')
-const screen_out = document.querySelector('.output')
+// const screen_input = document.querySelector('.input')
+// const screen_out = document.querySelector('.output')
 const numBtn = document.querySelectorAll('.data')
 const signBtn = document.querySelectorAll('.sign')
 const equalBtn = document.getElementById('equal-btn')
